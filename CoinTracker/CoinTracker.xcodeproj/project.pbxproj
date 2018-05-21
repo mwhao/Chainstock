@@ -60,6 +60,9 @@
 		40A957A220B3035500AF8F10 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957A120B3035500AF8F10 /* BaseView.swift */; };
 		40A957A320B3035500AF8F10 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957A120B3035500AF8F10 /* BaseView.swift */; };
 		40A957A420B3035500AF8F10 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957A120B3035500AF8F10 /* BaseView.swift */; };
+		40A957A720B3087900AF8F10 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957A620B3087900AF8F10 /* CoreDataStack.swift */; };
+		40A957A820B3087900AF8F10 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957A620B3087900AF8F10 /* CoreDataStack.swift */; };
+		40A957A920B3087900AF8F10 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957A620B3087900AF8F10 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,7 @@
 		40A9579920B2D0B300AF8F10 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		40A9579D20B2DEB800AF8F10 /* CTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTError.swift; sourceTree = "<group>"; };
 		40A957A120B3035500AF8F10 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		40A957A620B3087900AF8F10 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				40A9572920B2A26E00AF8F10 /* CoinTracker.xcdatamodeld */,
+				40A957A620B3087900AF8F10 /* CoreDataStack.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				40A9576C20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
 				40A9575920B2A4EB00AF8F10 /* ListConfigurator.swift in Sources */,
 				40A9577420B2A9FD00AF8F10 /* Network.swift in Sources */,
+				40A957A720B3087900AF8F10 /* CoreDataStack.swift in Sources */,
 				40A9572B20B2A26E00AF8F10 /* CoinTracker.xcdatamodeld in Sources */,
 				40A9576220B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				40A9578020B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
@@ -463,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A957A820B3087900AF8F10 /* CoreDataStack.swift in Sources */,
 				40A9576020B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
 				40A9575A20B2A4EB00AF8F10 /* ListConfigurator.swift in Sources */,
 				40A9575D20B2A4EB00AF8F10 /* ListPresenter.swift in Sources */,
@@ -484,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A957A920B3087900AF8F10 /* CoreDataStack.swift in Sources */,
 				40A9576120B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
 				40A9575B20B2A4EB00AF8F10 /* ListConfigurator.swift in Sources */,
 				40A9575E20B2A4EB00AF8F10 /* ListPresenter.swift in Sources */,
@@ -647,6 +655,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34SL6966R8;
 				INFOPLIST_FILE = CoinTracker/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -665,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34SL6966R8;
 				INFOPLIST_FILE = CoinTracker/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
