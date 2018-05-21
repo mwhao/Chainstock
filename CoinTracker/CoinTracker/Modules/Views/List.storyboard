@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VgZ-pu-ejY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="icH-55-CLA">
+            <objects>
+                <navigationController id="VgZ-pu-ejY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YHe-p1-ImP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="la5-X2-q2L" kind="relationship" relationship="rootViewController" id="h0N-jC-nZq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfv-dM-x4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-377" y="201"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="j9V-4K-Eln">
+            <objects>
+                <viewController storyboardIdentifier="ListViewController" id="la5-X2-q2L" customClass="ListViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2k-nl-yHf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mYe-Rv-nCk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="la5-X2-q2L" id="Bb0-KN-AHc"/>
+                                    <outlet property="delegate" destination="la5-X2-q2L" id="eDB-qD-871"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mYe-Rv-nCk" firstAttribute="leading" secondItem="c1g-la-0Ds" secondAttribute="leading" id="5x2-zJ-bsM"/>
+                            <constraint firstItem="mYe-Rv-nCk" firstAttribute="top" secondItem="c1g-la-0Ds" secondAttribute="top" id="6tf-6Q-ayh"/>
+                            <constraint firstItem="c1g-la-0Ds" firstAttribute="bottom" secondItem="mYe-Rv-nCk" secondAttribute="bottom" id="Xt9-Hu-Oif"/>
+                            <constraint firstItem="c1g-la-0Ds" firstAttribute="trailing" secondItem="mYe-Rv-nCk" secondAttribute="trailing" id="YaV-H9-8bh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c1g-la-0Ds"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="List" largeTitleDisplayMode="always" id="RTR-rW-GQf"/>
+                    <connections>
+                        <outlet property="tableView" destination="mYe-Rv-nCk" id="ra2-3b-J9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbK-RT-85N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354" y="200"/>
+        </scene>
+    </scenes>
+</document>
