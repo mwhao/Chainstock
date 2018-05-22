@@ -18,6 +18,7 @@ protocol ListPresenter {
   var numberOfCurrencies: Int {get}
   
   func viewDidLoad()
+  func reloadModels()
   func model(at index: Int) -> Currency
 }
 
@@ -33,9 +34,7 @@ class ListPresenterImplementation {
   
   private var currencies = [Currency]() {
     didSet {
-      DispatchQueue.main.async {
-        self.view?.updateList()
-      }
+      DispatchQueue.main.async { self.view?.updateList() }
     }
   }
   
@@ -48,6 +47,18 @@ class ListPresenterImplementation {
     
   }
   
+  private func loadModels(_ then: emptyCompletion? = nil) {
+    Network.shared.getCurrencies { result in
+      switch result {
+      case .success(let data):
+        self.currencies = data
+      case .failure(let error):
+        self.view?.showError(error.localizedDescription)
+      }
+      DispatchQueue.main.async { then?() }
+    }
+  }
+  
 }
 
 //MARK: - ListPresenter
@@ -58,23 +69,19 @@ extension ListPresenterImplementation: ListPresenter {
     return currencies.count
   }
   
-  func model(at index: Int) -> Currency {
-    return currencies[index]
+  func viewDidLoad() {
+    HUDAnimator.show()
+    loadModels {
+      HUDAnimator.dismiss()
+    }
   }
   
-  func viewDidLoad() {    
-    HUDAnimator.show()
-    Network.shared.getCurrencies { result in
-      switch result {
-      case .success(let data):
-        self.currencies = data
-      case .failure(let error):
-        self.view?.showError(error.localizedDescription)
-      }
-      DispatchQueue.main.async {
-       HUDAnimator.dismiss()
-      }
-    }
+  func reloadModels() {
+    loadModels()
+  }
+  
+  func model(at index: Int) -> Currency {
+    return currencies[index]
   }
   
 }

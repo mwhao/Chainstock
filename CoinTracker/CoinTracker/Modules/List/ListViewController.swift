@@ -20,6 +20,20 @@ class ListViewController: UIViewController {
     ListConfiguratorImplementation.configure(for: self)
     tableView.register(nibModels: [Currency.self])
     presenter.viewDidLoad()
+    
+    self.tableView.addSubview(self.refreshControl)
+  }
+  
+  lazy var refreshControl: UIRefreshControl = {
+    let refreshControl = UIRefreshControl()
+    refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+    refreshControl.tintColor = .gray
+    
+    return refreshControl
+  }()
+  
+  @objc func refresh(_ refreshControl: UIRefreshControl) {
+    presenter.reloadModels()
   }
   
 }
@@ -29,6 +43,7 @@ class ListViewController: UIViewController {
 extension ListViewController: ListView {
   func updateList() {
     tableView.reloadData()
+    refreshControl.endRefreshing()
   }
 }
 
