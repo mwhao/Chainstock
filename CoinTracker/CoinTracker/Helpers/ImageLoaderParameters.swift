@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum ImageLoaderParameters {
+  static let format = ".png"
+  static let size = "128x128/" 
+}

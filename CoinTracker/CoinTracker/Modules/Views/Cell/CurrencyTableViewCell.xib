@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,28 +20,39 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHC-7U-E4o">
-                        <rect key="frame" x="16" y="12" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cml-zP-E40">
                         <rect key="frame" x="262" y="12" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iaL-KE-nj0">
+                        <rect key="frame" x="8" y="3.5" width="34.5" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iaL-KE-nj0" secondAttribute="height" multiplier="1:1" id="SKN-F9-JQV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHC-7U-E4o">
+                        <rect key="frame" x="50.5" y="11" width="203.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="UHC-7U-E4o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0UE-LM-WuC"/>
-                    <constraint firstItem="UHC-7U-E4o" firstAttribute="centerY" secondItem="cml-zP-E40" secondAttribute="centerY" id="IrB-MI-tzb"/>
+                    <constraint firstItem="iaL-KE-nj0" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="9Vq-Ms-EAx"/>
+                    <constraint firstItem="UHC-7U-E4o" firstAttribute="leading" secondItem="iaL-KE-nj0" secondAttribute="trailing" constant="8" id="AIz-Ea-X9q"/>
                     <constraint firstItem="cml-zP-E40" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="J4r-Qs-D0H"/>
+                    <constraint firstItem="cml-zP-E40" firstAttribute="leading" secondItem="UHC-7U-E4o" secondAttribute="trailing" constant="8" id="KfV-MT-A99"/>
+                    <constraint firstItem="iaL-KE-nj0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="i98-72-ZqG"/>
+                    <constraint firstItem="iaL-KE-nj0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oBs-1q-wvi"/>
                     <constraint firstAttribute="trailing" secondItem="cml-zP-E40" secondAttribute="trailing" constant="16" id="pbl-eg-RkR"/>
+                    <constraint firstItem="UHC-7U-E4o" firstAttribute="centerY" secondItem="iaL-KE-nj0" secondAttribute="centerY" id="xCd-pI-Vnm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imgCoin" destination="iaL-KE-nj0" id="N8h-M0-UVK"/>
                 <outlet property="txtPrice" destination="cml-zP-E40" id="jaq-GL-sHd"/>
                 <outlet property="txtTitle" destination="UHC-7U-E4o" id="50g-tF-5zf"/>
             </connections>

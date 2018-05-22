@@ -21,6 +21,10 @@ struct Currency: Codable {
   let quotes: Quotes
   let lastUpdated: Int
   
+  var imageURL: URL? {
+    return URL(string: API.coinsURL + ImageLoaderParameters.size + "\(id)" + ImageLoaderParameters.format)
+  }
+  
   enum CodingKeys: String, CodingKey {
     case id, name, symbol
     case websiteSlug = "website_slug"

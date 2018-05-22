@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import Nuke
 
 class CurrencyTableViewCell: UITableViewCell {
   
   @IBOutlet fileprivate weak var txtTitle: UILabel!
   @IBOutlet fileprivate weak var txtPrice: UILabel!
+  @IBOutlet fileprivate weak var imgCoin: UIImageView!
+  
+  override func awakeFromNib() {
+    
+  }
   
 }
 
@@ -19,5 +25,7 @@ extension Currency: CellViewModel {
   func setup(cell: CurrencyTableViewCell) {
     cell.txtTitle.text = name
     cell.txtPrice.text = "\(quotes.usd.price)"
+    guard let imageURL = imageURL else {return}
+    Nuke.loadImage(with: imageURL, into: cell.imgCoin)
   }
 }
