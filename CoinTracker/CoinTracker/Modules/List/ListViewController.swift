@@ -15,6 +15,13 @@ class ListViewController: UIViewController {
   
   var presenter: ListPresenter!
   
+  private lazy var refreshControl: UIRefreshControl = {
+    let refreshControl = UIRefreshControl()
+    refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+    refreshControl.tintColor = .gray
+    return refreshControl
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     ListConfiguratorImplementation.configure(for: self)
@@ -23,14 +30,6 @@ class ListViewController: UIViewController {
     
     self.tableView.addSubview(self.refreshControl)
   }
-  
-  lazy var refreshControl: UIRefreshControl = {
-    let refreshControl = UIRefreshControl()
-    refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
-    refreshControl.tintColor = .gray
-    
-    return refreshControl
-  }()
   
   @objc func refresh(_ refreshControl: UIRefreshControl) {
     presenter.reloadModels()
