@@ -62,13 +62,17 @@ extension ListPresenterImplementation: ListPresenter {
     return currencies[index]
   }
   
-  func viewDidLoad() {
+  func viewDidLoad() {    
+    HUDAnimator.show()
     Network.shared.getCurrencies { result in
       switch result {
       case .success(let data):
         self.currencies = data
       case .failure(let error):
         self.view?.showError(error.localizedDescription)
+      }
+      DispatchQueue.main.async {
+       HUDAnimator.dismiss()
       }
     }
   }

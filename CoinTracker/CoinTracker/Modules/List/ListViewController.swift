@@ -35,6 +35,7 @@ extension ListViewController: ListView {
 extension ListViewController: UITableViewDataSource {
   
   public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    tableView.separatorStyle = presenter.numberOfCurrencies == 0 ? .none : .singleLine
     return presenter.numberOfCurrencies
   }
   
