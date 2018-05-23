@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		213E6EB22A8DD3867F8AD72C /* Pods_CoinTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288930CBB05F3C0216A0E14E /* Pods_CoinTrackerUITests.framework */; };
+		408D0E1F20B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
+		408D0E2020B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
+		408D0E2120B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
 		40A9572320B2A26E00AF8F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9572220B2A26E00AF8F10 /* AppDelegate.swift */; };
 		40A9572B20B2A26E00AF8F10 /* CoinTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40A9572920B2A26E00AF8F10 /* CoinTracker.xcdatamodeld */; };
 		40A9572D20B2A26E00AF8F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A9572C20B2A26E00AF8F10 /* Assets.xcassets */; };
@@ -47,9 +50,9 @@
 		40A9578020B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9577F20B2CC1400AF8F10 /* UITableView+CellViewModel.swift */; };
 		40A9578120B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9577F20B2CC1400AF8F10 /* UITableView+CellViewModel.swift */; };
 		40A9578220B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9577F20B2CC1400AF8F10 /* UITableView+CellViewModel.swift */; };
-		40A9579520B2CFFE00AF8F10 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579420B2CFFE00AF8F10 /* Currency.swift */; };
-		40A9579620B2CFFE00AF8F10 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579420B2CFFE00AF8F10 /* Currency.swift */; };
-		40A9579720B2CFFE00AF8F10 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579420B2CFFE00AF8F10 /* Currency.swift */; };
+		40A9579520B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579420B2CFFE00AF8F10 /* RawServerResponse.swift */; };
+		40A9579620B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579420B2CFFE00AF8F10 /* RawServerResponse.swift */; };
+		40A9579720B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579420B2CFFE00AF8F10 /* RawServerResponse.swift */; };
 		40A9579A20B2D0B300AF8F10 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579920B2D0B300AF8F10 /* APIConstants.swift */; };
 		40A9579B20B2D0B300AF8F10 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579920B2D0B300AF8F10 /* APIConstants.swift */; };
 		40A9579C20B2D0B300AF8F10 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9579920B2D0B300AF8F10 /* APIConstants.swift */; };
@@ -98,6 +101,7 @@
 /* Begin PBXFileReference section */
 		023EE02D2B51C1683BE0279C /* Pods-CoinTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTracker/Pods-CoinTracker.release.xcconfig"; sourceTree = "<group>"; };
 		288930CBB05F3C0216A0E14E /* Pods_CoinTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		408D0E1E20B544CE00BC46BB /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		40A9571F20B2A26E00AF8F10 /* CoinTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A9572220B2A26E00AF8F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A9572A20B2A26E00AF8F10 /* CoinTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoinTracker.xcdatamodel; sourceTree = "<group>"; };
@@ -120,7 +124,7 @@
 		40A9577720B2B54100AF8F10 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		40A9577B20B2B8FF00AF8F10 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		40A9577F20B2CC1400AF8F10 /* UITableView+CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CellViewModel.swift"; sourceTree = "<group>"; };
-		40A9579420B2CFFE00AF8F10 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		40A9579420B2CFFE00AF8F10 /* RawServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawServerResponse.swift; sourceTree = "<group>"; };
 		40A9579920B2D0B300AF8F10 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		40A9579D20B2DEB800AF8F10 /* CTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTError.swift; sourceTree = "<group>"; };
 		40A957A120B3035500AF8F10 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				40A9573A20B2A26F00AF8F10 /* CoinTrackerTests.swift */,
+				408D0E1E20B544CE00BC46BB /* Mock.swift */,
 			);
 			path = CoinTrackerTests;
 			sourceTree = "<group>";
@@ -328,7 +333,7 @@
 		40A9579820B2D00400AF8F10 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				40A9579420B2CFFE00AF8F10 /* Currency.swift */,
+				40A9579420B2CFFE00AF8F10 /* RawServerResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -582,7 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A9579520B2CFFE00AF8F10 /* Currency.swift in Sources */,
+				40A9579520B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */,
 				40A9577C20B2B8FF00AF8F10 /* CellViewModel.swift in Sources */,
 				40A9579A20B2D0B300AF8F10 /* APIConstants.swift in Sources */,
 				40A9577820B2B54100AF8F10 /* Result.swift in Sources */,
@@ -593,6 +598,7 @@
 				40A957AB20B419CB00AF8F10 /* ImageLoaderParameters.swift in Sources */,
 				40A9577420B2A9FD00AF8F10 /* Network.swift in Sources */,
 				40A957A720B3087900AF8F10 /* CoreDataStack.swift in Sources */,
+				408D0E1F20B544CE00BC46BB /* Mock.swift in Sources */,
 				40A9572B20B2A26E00AF8F10 /* CoinTracker.xcdatamodeld in Sources */,
 				40A9576220B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				40A9578020B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
@@ -616,12 +622,13 @@
 				40A9576320B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				40A9577D20B2B8FF00AF8F10 /* CellViewModel.swift in Sources */,
 				40A9576D20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
-				40A9579620B2CFFE00AF8F10 /* Currency.swift in Sources */,
+				40A9579620B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */,
 				40A9577520B2A9FD00AF8F10 /* Network.swift in Sources */,
 				40A9579B20B2D0B300AF8F10 /* APIConstants.swift in Sources */,
 				40A9578120B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
 				40A9579F20B2DEB800AF8F10 /* CTError.swift in Sources */,
 				40A957B420B42B3200AF8F10 /* HUDAnimator.swift in Sources */,
+				408D0E2020B544CE00BC46BB /* Mock.swift in Sources */,
 				40A957A320B3035500AF8F10 /* BaseView.swift in Sources */,
 				40A957C420B45CC300AF8F10 /* Types.swift in Sources */,
 				40A9577920B2B54100AF8F10 /* Result.swift in Sources */,
@@ -641,12 +648,13 @@
 				40A9576420B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				40A9577E20B2B8FF00AF8F10 /* CellViewModel.swift in Sources */,
 				40A9576E20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
-				40A9579720B2CFFE00AF8F10 /* Currency.swift in Sources */,
+				40A9579720B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */,
 				40A9577620B2A9FD00AF8F10 /* Network.swift in Sources */,
 				40A9579C20B2D0B300AF8F10 /* APIConstants.swift in Sources */,
 				40A9578220B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
 				40A957A020B2DEB800AF8F10 /* CTError.swift in Sources */,
 				40A957B520B42B3200AF8F10 /* HUDAnimator.swift in Sources */,
+				408D0E2120B544CE00BC46BB /* Mock.swift in Sources */,
 				40A957A420B3035500AF8F10 /* BaseView.swift in Sources */,
 				40A957C520B45CC300AF8F10 /* Types.swift in Sources */,
 				40A9577A20B2B54100AF8F10 /* Result.swift in Sources */,
