@@ -11,6 +11,8 @@ import Foundation
 
 protocol ListView: BaseView {
   func updateList()
+  func addBlurView()
+  func removeBlurView()
 }
 
 protocol ListPresenter {
@@ -21,10 +23,13 @@ protocol ListPresenter {
   func reloadModels()
   func currency(at index: Int) -> Currency
   func selectCurrency(at index: Int)
+  func didTap()
+
 }
 
 protocol ListRouter {
   func openDetail(for currency: Currency)
+  func closeDetail()
 }
 
 class ListPresenterImplementation {
@@ -65,7 +70,7 @@ class ListPresenterImplementation {
 //MARK: - ListPresenter
 
 extension ListPresenterImplementation: ListPresenter {
-  
+
   var numberOfCurrencies: Int {
     return currencies.count
   }
@@ -87,7 +92,13 @@ extension ListPresenterImplementation: ListPresenter {
   
   func selectCurrency(at index: Int) {
     let coin = currency(at: index)
+    view?.addBlurView()
     router.openDetail(for: coin)
+  }
+  
+  func didTap() {
+    view?.removeBlurView()
+    router.closeDetail()
   }
   
 }

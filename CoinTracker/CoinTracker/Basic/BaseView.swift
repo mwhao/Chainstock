@@ -10,6 +10,7 @@ import UIKit
 
 protocol BaseView: class {
   func showError(_ message: String)
+  func setUserInteraction(_ userInteraction: Bool)
 }
 
 extension BaseView where Self: UIViewController {
@@ -18,5 +19,10 @@ extension BaseView where Self: UIViewController {
     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
     present(alert, animated: true, completion: nil)
   }
+  
+  func setUserInteraction(_ userInteraction: Bool) {
+    view.isUserInteractionEnabled = userInteraction
+  }
+  
 }
 

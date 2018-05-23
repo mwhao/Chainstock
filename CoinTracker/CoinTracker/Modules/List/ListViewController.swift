@@ -26,7 +26,7 @@ class ListViewController: UIViewController {
     super.viewDidLoad()
     ListConfiguratorImplementation.configure(for: self)
     presenter.viewDidLoad()
-    setupTableView()
+    setupTableView()    
   }
   
   private func setupTableView() {
@@ -34,8 +34,13 @@ class ListViewController: UIViewController {
     tableView.addSubview(refreshControl)
   }
   
-  @objc func refresh(_ refreshControl: UIRefreshControl) {
+  @objc private func refresh(_ refreshControl: UIRefreshControl) {
     presenter.reloadModels()
+  }
+  
+  
+  @objc func tap(sender: UITapGestureRecognizer) {
+    presenter.didTap()
   }
   
 }
@@ -43,10 +48,32 @@ class ListViewController: UIViewController {
 //MARK: - ListView
 
 extension ListViewController: ListView {
+  
   func updateList() {
     tableView.reloadData()
     refreshControl.endRefreshing()
   }
+  
+  func addBlurView() {
+    let visual = UIVisualEffectView(frame: UIScreen.main.bounds)
+    UIView.animate(withDuration: 0.3) {
+      visual.effect = UIBlurEffect(style: .dark)
+    }
+    let tap = UITapGestureRecognizer(target: self, action: #selector(tap(sender:)))
+    view.addGestureRecognizer(tap)
+    view.addSubview(visual)
+  }
+  
+  func removeBlurView() {
+    let visual = view.subviews.first(where: {$0 is UIVisualEffectView})
+    UIView.animate(withDuration: 0.3, animations: {
+      visual?.alpha = 0
+    }) { (finish) in
+      visual?.removeFromSuperview()
+    }
+    view.gestureRecognizers?.forEach { view.removeGestureRecognizer($0)}
+  }
+  
 }
 
 extension ListViewController: UITableViewDataSource {
@@ -65,5 +92,6 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     presenter.selectCurrency(at: indexPath.row)
+    tableView.deselectRow(at: indexPath, animated: true)
   }
 }

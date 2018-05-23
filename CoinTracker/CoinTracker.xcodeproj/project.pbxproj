@@ -29,6 +29,12 @@
 		408D0E3C20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E3B20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift */; };
 		408D0E3D20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E3B20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift */; };
 		408D0E3E20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E3B20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift */; };
+		408D0E4920B5903A00BC46BB /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E4820B5903A00BC46BB /* View.swift */; };
+		408D0E4A20B5903A00BC46BB /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E4820B5903A00BC46BB /* View.swift */; };
+		408D0E4B20B5903A00BC46BB /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E4820B5903A00BC46BB /* View.swift */; };
+		408D0E4E20B5956C00BC46BB /* PullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E4D20B5956C00BC46BB /* PullUpController.swift */; };
+		408D0E4F20B5956C00BC46BB /* PullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E4D20B5956C00BC46BB /* PullUpController.swift */; };
+		408D0E5020B5956C00BC46BB /* PullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E4D20B5956C00BC46BB /* PullUpController.swift */; };
 		40A9572320B2A26E00AF8F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9572220B2A26E00AF8F10 /* AppDelegate.swift */; };
 		40A9572B20B2A26E00AF8F10 /* CoinTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40A9572920B2A26E00AF8F10 /* CoinTracker.xcdatamodeld */; };
 		40A9572D20B2A26E00AF8F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A9572C20B2A26E00AF8F10 /* Assets.xcassets */; };
@@ -126,6 +132,8 @@
 		408D0E2620B560B300BC46BB /* CurrencyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewController.swift; sourceTree = "<group>"; };
 		408D0E3320B560D500BC46BB /* CurrencyDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyDetail.storyboard; sourceTree = "<group>"; };
 		408D0E3B20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ControllersLoader.swift"; sourceTree = "<group>"; };
+		408D0E4820B5903A00BC46BB /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		408D0E4D20B5956C00BC46BB /* PullUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpController.swift; sourceTree = "<group>"; };
 		40A9571F20B2A26E00AF8F10 /* CoinTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A9572220B2A26E00AF8F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A9572A20B2A26E00AF8F10 /* CoinTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoinTracker.xcdatamodel; sourceTree = "<group>"; };
@@ -212,6 +220,14 @@
 				408D0E3B20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		408D0E4C20B5904C00BC46BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				408D0E4820B5903A00BC46BB /* View.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		40A9571620B2A26E00AF8F10 = {
@@ -313,6 +329,7 @@
 			children = (
 				408D0E3F20B56A6E00BC46BB /* Storyboard */,
 				40A9578420B2CC8F00AF8F10 /* TableView */,
+				408D0E4C20B5904C00BC46BB /* View */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,9 +377,9 @@
 			isa = PBXGroup;
 			children = (
 				40A957AA20B419CB00AF8F10 /* ImageLoaderParameters.swift */,
+				40A957C220B45CC300AF8F10 /* Types.swift */,
 				40A9579320B2CEFA00AF8F10 /* Tools */,
 				40A9578320B2CC7500AF8F10 /* Extensions */,
-				40A957C220B45CC300AF8F10 /* Types.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -372,6 +389,7 @@
 			children = (
 				40A9577720B2B54100AF8F10 /* Result.swift */,
 				40A957B220B42B3200AF8F10 /* HUDAnimator.swift */,
+				408D0E4D20B5956C00BC46BB /* PullUpController.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -646,10 +664,12 @@
 				40A957C320B45CC300AF8F10 /* Types.swift in Sources */,
 				40A957B320B42B3200AF8F10 /* HUDAnimator.swift in Sources */,
 				40A9576C20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
+				408D0E4E20B5956C00BC46BB /* PullUpController.swift in Sources */,
 				40A9575920B2A4EB00AF8F10 /* ListConfigurator.swift in Sources */,
 				40A957AB20B419CB00AF8F10 /* ImageLoaderParameters.swift in Sources */,
 				408D0E3C20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */,
 				40A9577420B2A9FD00AF8F10 /* Network.swift in Sources */,
+				408D0E4920B5903A00BC46BB /* View.swift in Sources */,
 				40A957A720B3087900AF8F10 /* CoreDataStack.swift in Sources */,
 				408D0E1F20B544CE00BC46BB /* Mock.swift in Sources */,
 				40A9572B20B2A26E00AF8F10 /* CoinTracker.xcdatamodeld in Sources */,
@@ -668,6 +688,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408D0E4A20B5903A00BC46BB /* View.swift in Sources */,
 				40A957A820B3087900AF8F10 /* CoreDataStack.swift in Sources */,
 				408D0E3D20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */,
 				40A9576020B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
@@ -690,6 +711,7 @@
 				408D0E2020B544CE00BC46BB /* Mock.swift in Sources */,
 				40A957A320B3035500AF8F10 /* BaseView.swift in Sources */,
 				40A957C420B45CC300AF8F10 /* Types.swift in Sources */,
+				408D0E4F20B5956C00BC46BB /* PullUpController.swift in Sources */,
 				40A9577920B2B54100AF8F10 /* Result.swift in Sources */,
 				40A9573B20B2A26F00AF8F10 /* CoinTrackerTests.swift in Sources */,
 			);
@@ -699,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408D0E4B20B5903A00BC46BB /* View.swift in Sources */,
 				40A957A920B3087900AF8F10 /* CoreDataStack.swift in Sources */,
 				408D0E3E20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */,
 				40A9576120B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
@@ -721,6 +744,7 @@
 				408D0E2120B544CE00BC46BB /* Mock.swift in Sources */,
 				40A957A420B3035500AF8F10 /* BaseView.swift in Sources */,
 				40A957C520B45CC300AF8F10 /* Types.swift in Sources */,
+				408D0E5020B5956C00BC46BB /* PullUpController.swift in Sources */,
 				40A9577A20B2B54100AF8F10 /* Result.swift in Sources */,
 				40A9574620B2A26F00AF8F10 /* CoinTrackerUITests.swift in Sources */,
 			);
