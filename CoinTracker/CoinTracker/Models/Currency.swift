@@ -20,7 +20,6 @@ struct Currency: Codable {
   let maxSupply: Int?
   let quotes: Quotes
   let lastUpdated: Int
-  
   var imageURL: URL? {
     return URL(string: API.coinsURL + ImageLoaderParameters.size + "\(id)" + ImageLoaderParameters.format)
   }
@@ -46,8 +45,8 @@ struct Quotes: Codable {
 }
 
 struct Usd: Codable {
-  let price: Double
-  let volume24H, marketCap: Int
+  let price, volume24H: Double
+  let marketCap: Int
   let percentChange1H, percentChange24H, percentChange7D: Double
   
   enum CodingKeys: String, CodingKey {
@@ -88,4 +87,3 @@ class JSONNull: Codable {
     try container.encodeNil()
   }
 }
-

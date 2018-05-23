@@ -25,10 +25,13 @@ class ListViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     ListConfiguratorImplementation.configure(for: self)
-    tableView.register(nibModels: [Currency.self])
     presenter.viewDidLoad()
-    
-    self.tableView.addSubview(self.refreshControl)
+    setupTableView()
+  }
+  
+  private func setupTableView() {
+    tableView.register(nibModels: [Currency.self])
+    tableView.addSubview(refreshControl)
   }
   
   @objc func refresh(_ refreshControl: UIRefreshControl) {
