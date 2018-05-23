@@ -20,7 +20,8 @@ class CurrencyTableViewCell: UITableViewCell {
 extension Currency: CellViewModel {
   func setup(cell: CurrencyTableViewCell) {
     cell.txtTitle.text = name
-    cell.txtPrice.text = "\(quotes.usd.price)"
+    cell.txtPrice.text = "$ \(quotes.usd.price)"
+    cell.txtPrice.textColor = quotes.usd.percentChange1H < 0 ? .red : .green
     guard let imageURL = imageURL else {return}
     Nuke.loadImage(with: imageURL, into: cell.imgCoin)
   }
