@@ -27,7 +27,7 @@ class CoinTrackerTests: XCTestCase {
       let result = try JSONDecoder().decode(RawServerResponse.self, from: mockData.data(using: .utf8)!)
       print(result)
     } catch {
-      fatalError(error.localizedDescription)
+      XCTFail(error.localizedDescription)
     }
     
     

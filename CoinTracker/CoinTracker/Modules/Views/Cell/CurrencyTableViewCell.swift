@@ -15,10 +15,6 @@ class CurrencyTableViewCell: UITableViewCell {
   @IBOutlet fileprivate weak var txtPrice: UILabel!
   @IBOutlet fileprivate weak var imgCoin: UIImageView!
   
-  override func awakeFromNib() {
-    
-  }
-  
 }
 
 extension Currency: CellViewModel {

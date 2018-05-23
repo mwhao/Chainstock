@@ -16,7 +16,8 @@ struct RawServerResponse: Codable {
 struct Currency: Codable {
   let id: Int
   let name, symbol, websiteSlug: String
-  let rank, circulatingSupply, totalSupply: Int
+  let rank: Int
+  let circulatingSupply, totalSupply: Double
   let maxSupply: Int?
   let quotes: Quotes
   let lastUpdated: Int
@@ -45,8 +46,9 @@ struct Quotes: Codable {
 }
 
 struct Usd: Codable {
-  let price, volume24H: Double
-  let marketCap: Int
+  let price: Double
+  let volume24H: Double
+  let marketCap: Double
   let percentChange1H, percentChange24H, percentChange7D: Double
   
   enum CodingKeys: String, CodingKey {
