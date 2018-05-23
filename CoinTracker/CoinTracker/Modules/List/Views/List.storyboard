@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-377" y="201"/>
         </scene>
-        <!--List-->
+        <!--Top Coins-->
         <scene sceneID="j9V-4K-Eln">
             <objects>
                 <viewController storyboardIdentifier="ListViewController" id="la5-X2-q2L" customClass="ListViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c1g-la-0Ds"/>
                     </view>
-                    <navigationItem key="navigationItem" title="List" largeTitleDisplayMode="always" id="RTR-rW-GQf"/>
+                    <navigationItem key="navigationItem" title="Top Coins" largeTitleDisplayMode="always" id="RTR-rW-GQf"/>
                     <connections>
                         <outlet property="tableView" destination="mYe-Rv-nCk" id="ra2-3b-J9i"/>
                     </connections>

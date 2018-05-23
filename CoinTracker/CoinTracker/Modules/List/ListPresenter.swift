@@ -19,11 +19,12 @@ protocol ListPresenter {
   
   func viewDidLoad()
   func reloadModels()
-  func model(at index: Int) -> Currency
+  func currency(at index: Int) -> Currency
+  func selectCurrency(at index: Int)
 }
 
 protocol ListRouter {
-  
+  func openDetail(for currency: Currency)
 }
 
 class ListPresenterImplementation {
@@ -80,8 +81,13 @@ extension ListPresenterImplementation: ListPresenter {
     loadModels()
   }
   
-  func model(at index: Int) -> Currency {
+  func currency(at index: Int) -> Currency {
     return currencies[index]
+  }
+  
+  func selectCurrency(at index: Int) {
+    let coin = currency(at: index)
+    router.openDetail(for: coin)
   }
   
 }

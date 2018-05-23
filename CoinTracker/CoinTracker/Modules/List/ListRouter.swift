@@ -22,5 +22,10 @@ class ListRouterImplementation {
 //MARK: - ListRouter
 
 extension ListRouterImplementation: ListRouter {
-  
+  func openDetail(for currency: Currency) {
+    let controller = CurrencyDetailViewController.create(of: .CurrencyDetail)
+    view?.navigationController?.show(controller, sender: view)
+  }
 }
+
+
