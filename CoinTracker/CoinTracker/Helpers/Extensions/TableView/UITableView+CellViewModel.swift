@@ -12,6 +12,7 @@ extension UITableView {
   func dequeueReusableCell(with model: CellAnyViewModel, for indexPath: IndexPath) -> UITableViewCell {
     let identifier = String(describing: type(of: model).cellAnyType)
     let cell = dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+    cell.tag = indexPath.row
     model.setupAny(cell: cell)
     return cell
   }

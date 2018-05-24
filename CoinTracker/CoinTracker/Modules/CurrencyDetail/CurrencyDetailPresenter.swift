@@ -13,9 +13,13 @@ protocol CurrencyDetailView: BaseView {
   func setNavigationTitle(_ text: String)
   func setCoinImage(from url: URL)
   func setSymbol(_ text: String)
+  func setPrice(_ text: String)
+  func setMarketCap(_ text: String)
 }
 
 protocol CurrencyDetailPresenter {
+  
+  var usd: Usd {get}
   
   func viewDidLoad()
   
@@ -44,6 +48,9 @@ class CurrencyDetailPresenterImplementation {
   private func setup() {
     view?.setNavigationTitle(currency.name)
     view?.setSymbol(currency.symbol)
+    view?.setMarketCap("$ \(currency.quotes.usd.marketCap)")
+    let price = "$ \(currency.quotes.usd.price)"
+    view?.setPrice(price)
     if let url = currency.imageURL {
       view?.setCoinImage(from: url)
     }
@@ -55,11 +62,13 @@ class CurrencyDetailPresenterImplementation {
 
 extension CurrencyDetailPresenterImplementation: CurrencyDetailPresenter {
   
+  var usd: Usd {
+    return currency.quotes.usd
+  }
+  
   func viewDidLoad() {
     setup()
   }
   
 }
-
-
 

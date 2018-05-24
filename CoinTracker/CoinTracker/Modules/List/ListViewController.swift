@@ -54,6 +54,7 @@ extension ListViewController: ListView {
     refreshControl.endRefreshing()
   }
   
+  //TODO: - Move to PullUpController
   func addBlurView() {
     let visual = UIVisualEffectView(frame: UIScreen.main.bounds)
     UIView.animate(withDuration: 0.3) {
