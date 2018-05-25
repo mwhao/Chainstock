@@ -12,7 +12,6 @@ protocol StoryboardInstantiable {
   static var storyboardIdentifier: String { get }
 }
 
-
 extension UIViewController: StoryboardInstantiable {}
 
 extension UIStoryboard {

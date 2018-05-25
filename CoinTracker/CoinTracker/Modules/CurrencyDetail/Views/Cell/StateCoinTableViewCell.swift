@@ -17,7 +17,6 @@ class StateCoinTableViewCell: UITableViewCell {
   @IBOutlet weak var txtValueGrowth: UILabel!
   @IBOutlet weak var txtCalculatedValue: UILabel!
   
-  
 }
 
 extension Usd: CellViewModel {
@@ -27,10 +26,10 @@ extension Usd: CellViewModel {
     cell.txtPercentGrowth.text = "\(self[changePeriod].percent) %"
     
     let diff = price ^% self[changePeriod].percent
-
+    let caluculated = price - (diff)
+    cell.txtValueGrowth.text = "$ \(diff)"
     
-    cell.txtValueGrowth.text = "\(diff) $"
-    cell.txtCalculatedValue.text = "$ \(price - diff)"
+    cell.txtCalculatedValue.text = "$ \(caluculated)"
     
     cell.txtValueGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()
     cell.txtPercentGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()

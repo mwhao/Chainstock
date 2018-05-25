@@ -24,11 +24,9 @@ class CurrencyDetailViewController: PullUpController {
   override func viewDidLoad() {
     super.viewDidLoad()    
     presenter?.viewDidLoad()
-    //    let viewi = UIView(frame: view.bounds)
-    //    viewi.backgroundColor = .red
-    //    view.addSubview(viewi)
-//    tableView.sectionHeaderHeight = 20
     tableView.register(nibModels: [Usd.self])
+    view.layer.cornerRadius = 20
+    view.layer.masksToBounds = true
   }
   
   //MARK: - PullUpController overrides
@@ -38,7 +36,7 @@ class CurrencyDetailViewController: PullUpController {
   }
   
   override var pullUpControllerPreviewOffset: CGFloat {
-    return UIScreen.main.bounds.height/2
+    return UIScreen.main.bounds.height - view.bounds.height / 2  // TODO: - TEMP
   }
   
 }
@@ -73,6 +71,7 @@ extension CurrencyDetailViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 3
   }
+  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     return tableView.dequeueReusableCell(with: presenter!.usd, for: indexPath)
   }

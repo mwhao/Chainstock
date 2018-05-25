@@ -14,7 +14,7 @@ extension Double {
   
   static func ^%(lhs: Double, rhs: Double) -> Double {
     let result = (lhs/100) * (rhs)
-    return result.roundToDecimal(2)
+    return result
   }
   
   func roundToDecimal(_ fractionDigits: Int) -> Double {
@@ -23,4 +23,5 @@ extension Double {
   }
   
 }
+
 
