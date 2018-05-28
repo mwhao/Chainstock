@@ -36,7 +36,7 @@ extension Double {
       if value == "0" {
         com.append(value)
       } else {
-        if fromPoint.count > index {
+        if fromPoint.count-1 > index {
           let next = fromPoint[index+1]
           com.append("\(value)\(next)")
         } else {
