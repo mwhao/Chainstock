@@ -9,7 +9,7 @@
 
 import UIKit
 import Nuke
-
+// TODO: Do presenter non optional
 class CurrencyDetailViewController: PullUpController {
   
   var presenter: CurrencyDetailPresenter?
@@ -69,7 +69,7 @@ extension CurrencyDetailViewController: CurrencyDetailView {
 extension CurrencyDetailViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+    return presenter?.numberOfFields ?? 0
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

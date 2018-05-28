@@ -26,7 +26,7 @@ extension Usd: CellViewModel {
     cell.txtPercentGrowth.text = "\(self[changePeriod].percent) %"
     
     let diff = price ^% self[changePeriod].percent
-    let caluculated = price - (diff)
+    let caluculated = Float(price - (diff))
     cell.txtValueGrowth.text = "$ \(diff)"
     
     cell.txtCalculatedValue.text = "$ \(caluculated)"
@@ -39,3 +39,5 @@ extension Usd: CellViewModel {
     
   }
 }
+
+

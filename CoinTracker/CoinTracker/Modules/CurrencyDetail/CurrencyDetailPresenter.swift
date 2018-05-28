@@ -20,7 +20,7 @@ protocol CurrencyDetailView: BaseView {
 protocol CurrencyDetailPresenter {
   
   var usd: Usd {get}
-  
+  var numberOfFields: Int {get}
   func viewDidLoad()
   
 }
@@ -64,6 +64,10 @@ extension CurrencyDetailPresenterImplementation: CurrencyDetailPresenter {
   
   var usd: Usd {
     return currency.quotes.usd
+  }
+  
+  var numberOfFields: Int {
+    return 3
   }
   
   func viewDidLoad() {
