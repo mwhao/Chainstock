@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		213E6EB22A8DD3867F8AD72C /* Pods_CoinTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288930CBB05F3C0216A0E14E /* Pods_CoinTrackerUITests.framework */; };
+		4049A9DD20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
+		4049A9DE20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
+		4049A9DF20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
 		408D0E1F20B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
 		408D0E2020B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
 		408D0E2120B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
@@ -143,6 +146,7 @@
 /* Begin PBXFileReference section */
 		023EE02D2B51C1683BE0279C /* Pods-CoinTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTracker/Pods-CoinTracker.release.xcconfig"; sourceTree = "<group>"; };
 		288930CBB05F3C0216A0E14E /* Pods_CoinTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4049A9DC20BC2A6C0078AB13 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		408D0E1E20B544CE00BC46BB /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		408D0E2320B560B300BC46BB /* CurrencyDetailConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailConfigurator.swift; sourceTree = "<group>"; };
 		408D0E2420B560B300BC46BB /* CurrencyDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailPresenter.swift; sourceTree = "<group>"; };
@@ -226,6 +230,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4049A9E020BC2A750078AB13 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				4049A9DC20BC2A6C0078AB13 /* String.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		408D0E2220B560B300BC46BB /* CurrencyDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +410,7 @@
 				408D0E4C20B5904C00BC46BB /* View */,
 				408D0E6820B6D9AD00BC46BB /* Color */,
 				408D0E6E20B6E7AF00BC46BB /* Double */,
+				4049A9E020BC2A750078AB13 /* String */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -739,6 +752,7 @@
 				40A9577820B2B54100AF8F10 /* Result.swift in Sources */,
 				408D0E6020B6D81D00BC46BB /* Usd+Subscript.swift in Sources */,
 				40A957C320B45CC300AF8F10 /* Types.swift in Sources */,
+				4049A9DD20BC2A6C0078AB13 /* String.swift in Sources */,
 				40A957B320B42B3200AF8F10 /* HUDAnimator.swift in Sources */,
 				40A9576C20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
 				408D0E4E20B5956C00BC46BB /* PullUpController.swift in Sources */,
@@ -796,6 +810,7 @@
 				40A957C420B45CC300AF8F10 /* Types.swift in Sources */,
 				408D0E4F20B5956C00BC46BB /* PullUpController.swift in Sources */,
 				40A9577920B2B54100AF8F10 /* Result.swift in Sources */,
+				4049A9DE20BC2A6C0078AB13 /* String.swift in Sources */,
 				40A9573B20B2A26F00AF8F10 /* CoinTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -834,6 +849,7 @@
 				40A957C520B45CC300AF8F10 /* Types.swift in Sources */,
 				408D0E5020B5956C00BC46BB /* PullUpController.swift in Sources */,
 				40A9577A20B2B54100AF8F10 /* Result.swift in Sources */,
+				4049A9DF20BC2A6C0078AB13 /* String.swift in Sources */,
 				40A9574620B2A26F00AF8F10 /* CoinTrackerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,10 +26,10 @@ extension Usd: CellViewModel {
     cell.txtPercentGrowth.text = "\(self[changePeriod].percent) %"
     
     let diff = price ^% self[changePeriod].percent
-    let caluculated = Float(price - (diff))
-    cell.txtValueGrowth.text = "$ \(diff)"
+    let caluculated = price - (diff)
+    cell.txtValueGrowth.text = "$ \(diff.shiftConvert())"
     
-    cell.txtCalculatedValue.text = "$ \(caluculated)"
+    cell.txtCalculatedValue.text = "$ \(caluculated.shiftConvert())"
     
     cell.txtValueGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()
     cell.txtPercentGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()

@@ -16,11 +16,39 @@ extension Double {
     let result = (lhs/100) * (rhs)
     return result
   }
-  
-  func roundToDecimal(_ fractionDigits: Int) -> Double {
-    let multiplier = pow(10, Double(fractionDigits))
-    return Darwin.round(self * multiplier) / multiplier
+  //TODO: - RELOGIC
+  func shiftConvert() -> String {
+    let decimal = NSDecimalNumber(value: self)
+    var describe = String(describing: decimal)
+    var sign = ""
+    if describe.hasPrefix("-") {
+      sign = "-"
+      describe.removeFirst()
+    }
+    
+    let components = describe.components(separatedBy: ".")
+    guard let toPoint = components.first, let fromPoint = components.last else {return "\(self)"}
+    guard toPoint.count == 1 else {return sign + toPoint}
+    
+    var com = ""
+    
+    for (index, value) in fromPoint.enumerated() {
+      if value == "0" {
+        com.append(value)
+      } else {
+        if fromPoint.count > index {
+          let next = fromPoint[index+1]
+          com.append("\(value)\(next)")
+        } else {
+          com.append(value)
+        }
+        break
+      }
+    }
+    return sign + toPoint + "." + com
+    
   }
+  
   
 }
 
