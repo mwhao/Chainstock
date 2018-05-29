@@ -34,9 +34,11 @@ extension Usd: CellViewModel {
     cell.txtValueGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()
     cell.txtPercentGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()
     
-    cell.imgValueGrowth.image = self[changePeriod].percent > 0 ? #imageLiteral(resourceName: "icon_value_up") : #imageLiteral(resourceName: "icon_value_down")
-    cell.imgPercentGrowth.image = self[changePeriod].percent > 0 ? #imageLiteral(resourceName: "icon_percent_up") : #imageLiteral(resourceName: "icon_percent_down")
-    
+    let changePercent = self[changePeriod].percent
+    if abs(changePercent) != 0 {
+    cell.imgValueGrowth.image = changePercent > 0 ? #imageLiteral(resourceName: "icon_value_up") : #imageLiteral(resourceName: "icon_value_down")
+    cell.imgPercentGrowth.image = changePercent > 0 ? #imageLiteral(resourceName: "icon_percent_up") : #imageLiteral(resourceName: "icon_percent_down")
+    }
   }
 }
 
