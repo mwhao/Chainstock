@@ -19,36 +19,29 @@ extension Double {
   //TODO: - RELOGIC
   func shiftConvert() -> String {
     let decimal = NSDecimalNumber(value: self)
-    var describe = String(describing: decimal)
+    var descriptor = String(describing: decimal)
     var sign = ""
-    if describe.hasPrefix("-") {
+    if descriptor.hasPrefix("-") {
       sign = "-"
-      describe.removeFirst()
+      descriptor.removeFirst()
     }
     
-    let components = describe.components(separatedBy: ".")
+    let components = descriptor.components(separatedBy: ".")
     guard let toPoint = components.first, let fromPoint = components.last else {return "\(self)"}
-    guard toPoint.count == 1 else {return sign + toPoint}
+
+    var pointed = ""
     
-    var com = ""
-    
-    for (index, value) in fromPoint.enumerated() {
-      if value == "0" {
-        com.append(value)
+    for (index, char) in fromPoint.enumerated() {
+      if char == "0" {
+        pointed.append(char)
       } else {
-        if fromPoint.count-1 > index {
-          let next = fromPoint[index+1]
-          com.append("\(value)\(next)")
-        } else {
-          com.append(value)
-        }
+        fromPoint.count-1 > index ? pointed.append("\(char)\(fromPoint[index+1])") : pointed.append(char)
         break
       }
     }
-    return sign + toPoint + "." + com
+    return sign + toPoint + "." + pointed
     
   }
-  
   
 }
 
