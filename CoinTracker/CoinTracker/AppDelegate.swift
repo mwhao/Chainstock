@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {   
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    theme()
     return true
   }
 
@@ -23,5 +24,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
 
+}
+
+//TODO: -
+func theme() {
+  UINavigationBar.appearance().barTintColor = UIColor(hex: "3157A4")
+  UINavigationBar.appearance().tintColor = .white
+  let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Montserrat-Medium", size: 17)!]
+  UINavigationBar.appearance().titleTextAttributes = attributes
+  // 123962 dark blue
+  // 799EB3 gray blue
+  // 13ACE4 sky blue
+  // 3157A4 deep blue
+  // B1D6E8 white blue
 }
 

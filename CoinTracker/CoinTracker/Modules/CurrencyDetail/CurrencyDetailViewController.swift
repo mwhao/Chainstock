@@ -36,7 +36,7 @@ class CurrencyDetailViewController: PullUpController {
   }
   
   override var pullUpControllerPreviewOffset: CGFloat {
-    return UIScreen.main.bounds.height - view.bounds.height / 2  // TODO: - TEMP
+    return UIScreen.main.bounds.height/2  // TODO: - TEMP
   }
   
 }
