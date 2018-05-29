@@ -11,6 +11,8 @@
 		4049A9DD20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
 		4049A9DE20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
 		4049A9DF20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
+		404B00C420BD5DD90099386C /* Lucida Grande.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 404B00C320BD5DD70099386C /* Lucida Grande.ttf */; };
+		404B00C620BD5DDE0099386C /* Lucida Sans Unicode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 404B00C520BD5DDE0099386C /* Lucida Sans Unicode.ttf */; };
 		408D0E1F20B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
 		408D0E2020B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
 		408D0E2120B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
@@ -147,6 +149,8 @@
 		023EE02D2B51C1683BE0279C /* Pods-CoinTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTracker/Pods-CoinTracker.release.xcconfig"; sourceTree = "<group>"; };
 		288930CBB05F3C0216A0E14E /* Pods_CoinTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4049A9DC20BC2A6C0078AB13 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		404B00C320BD5DD70099386C /* Lucida Grande.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lucida Grande.ttf"; sourceTree = "<group>"; };
+		404B00C520BD5DDE0099386C /* Lucida Sans Unicode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lucida Sans Unicode.ttf"; sourceTree = "<group>"; };
 		408D0E1E20B544CE00BC46BB /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		408D0E2320B560B300BC46BB /* CurrencyDetailConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailConfigurator.swift; sourceTree = "<group>"; };
 		408D0E2420B560B300BC46BB /* CurrencyDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailPresenter.swift; sourceTree = "<group>"; };
@@ -236,6 +240,15 @@
 				4049A9DC20BC2A6C0078AB13 /* String.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		404B00C720BD5E140099386C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				404B00C320BD5DD70099386C /* Lucida Grande.ttf */,
+				404B00C520BD5DDE0099386C /* Lucida Sans Unicode.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		408D0E2220B560B300BC46BB /* CurrencyDetail */ = {
@@ -446,6 +459,7 @@
 		40A9578820B2CCD500AF8F10 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				404B00C720BD5E140099386C /* Fonts */,
 				40A957AE20B42A9100AF8F10 /* loader.gif */,
 				40A9572C20B2A26E00AF8F10 /* Assets.xcassets */,
 				40A9572E20B2A26E00AF8F10 /* LaunchScreen.storyboard */,
@@ -624,11 +638,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404B00C420BD5DD90099386C /* Lucida Grande.ttf in Resources */,
 				40A9576F20B2A5ED00AF8F10 /* CurrencyTableViewCell.xib in Resources */,
 				40A9573020B2A26E00AF8F10 /* LaunchScreen.storyboard in Resources */,
 				408D0E3420B560D500BC46BB /* CurrencyDetail.storyboard in Resources */,
 				40A957AF20B42A9100AF8F10 /* loader.gif in Resources */,
 				40A9576620B2A51900AF8F10 /* List.storyboard in Resources */,
+				404B00C620BD5DDE0099386C /* Lucida Sans Unicode.ttf in Resources */,
 				408D0E5620B6B89C00BC46BB /* StateCoinTableViewCell.xib in Resources */,
 				40A9572D20B2A26E00AF8F10 /* Assets.xcassets in Resources */,
 			);
