@@ -1,1 +1,1 @@
-![](https://cdn.rawgit.com/ryasnoy/chainstock/master/chainstock.svg)
+![](https://cdn.rawgit.com/ryasnoy/chainstock/master/Chainstock.svg)
