@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		213E6EB22A8DD3867F8AD72C /* Pods_CoinTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288930CBB05F3C0216A0E14E /* Pods_CoinTrackerUITests.framework */; };
+		4027158A20BEB09B00242AED /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4027158920BEB09A00242AED /* loader.gif */; };
+		4027158C20BEB21000242AED /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4027158B20BEB21000242AED /* Links.swift */; };
 		4049A9DD20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
 		4049A9DE20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
 		4049A9DF20BC2A6C0078AB13 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A9DC20BC2A6C0078AB13 /* String.swift */; };
@@ -29,6 +31,8 @@
 		4055C11D20BD6A410048D8FB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4055C10B20BD6A400048D8FB /* Montserrat-Bold.ttf */; };
 		4055C11E20BD6A410048D8FB /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4055C10C20BD6A400048D8FB /* Montserrat-Black.ttf */; };
 		4055C11F20BD6A410048D8FB /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4055C10D20BD6A400048D8FB /* Montserrat-Thin.ttf */; };
+		4062866020BEB647005E5891 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4027158B20BEB21000242AED /* Links.swift */; };
+		4062866120BEB647005E5891 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4027158B20BEB21000242AED /* Links.swift */; };
 		408D0E1F20B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
 		408D0E2020B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
 		408D0E2120B544CE00BC46BB /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D0E1E20B544CE00BC46BB /* Mock.swift */; };
@@ -131,15 +135,15 @@
 		40A957AB20B419CB00AF8F10 /* ImageLoaderParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957AA20B419CB00AF8F10 /* ImageLoaderParameters.swift */; };
 		40A957AC20B41A0100AF8F10 /* ImageLoaderParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957AA20B419CB00AF8F10 /* ImageLoaderParameters.swift */; };
 		40A957AD20B41A0100AF8F10 /* ImageLoaderParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957AA20B419CB00AF8F10 /* ImageLoaderParameters.swift */; };
-		40A957AF20B42A9100AF8F10 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40A957AE20B42A9100AF8F10 /* loader.gif */; };
-		40A957B020B42A9100AF8F10 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40A957AE20B42A9100AF8F10 /* loader.gif */; };
-		40A957B120B42A9100AF8F10 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40A957AE20B42A9100AF8F10 /* loader.gif */; };
 		40A957B320B42B3200AF8F10 /* HUDAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957B220B42B3200AF8F10 /* HUDAnimator.swift */; };
 		40A957B420B42B3200AF8F10 /* HUDAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957B220B42B3200AF8F10 /* HUDAnimator.swift */; };
 		40A957B520B42B3200AF8F10 /* HUDAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957B220B42B3200AF8F10 /* HUDAnimator.swift */; };
 		40A957C320B45CC300AF8F10 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957C220B45CC300AF8F10 /* Types.swift */; };
 		40A957C420B45CC300AF8F10 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957C220B45CC300AF8F10 /* Types.swift */; };
 		40A957C520B45CC300AF8F10 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957C220B45CC300AF8F10 /* Types.swift */; };
+		40EDA9C620BEBE8900EA4040 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDA9C520BEBE8900EA4040 /* UIButton.swift */; };
+		40EDA9C720BEBE8C00EA4040 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDA9C520BEBE8900EA4040 /* UIButton.swift */; };
+		40EDA9C820BEBE8C00EA4040 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDA9C520BEBE8900EA4040 /* UIButton.swift */; };
 		40FB698C20BE8B65001602CE /* InfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698820BE8B65001602CE /* InfoConfigurator.swift */; };
 		40FB698D20BE8B65001602CE /* InfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698820BE8B65001602CE /* InfoConfigurator.swift */; };
 		40FB698E20BE8B65001602CE /* InfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698820BE8B65001602CE /* InfoConfigurator.swift */; };
@@ -152,6 +156,9 @@
 		40FB699520BE8B65001602CE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698B20BE8B65001602CE /* InfoViewController.swift */; };
 		40FB699620BE8B65001602CE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698B20BE8B65001602CE /* InfoViewController.swift */; };
 		40FB699720BE8B65001602CE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698B20BE8B65001602CE /* InfoViewController.swift */; };
+		40FB699920BE8BD2001602CE /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB699820BE8BD2001602CE /* Info.storyboard */; };
+		40FB699A20BE8BD2001602CE /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB699820BE8BD2001602CE /* Info.storyboard */; };
+		40FB699B20BE8BD2001602CE /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB699820BE8BD2001602CE /* Info.storyboard */; };
 		4D0768C0482C18F4E1DED0AE /* Pods_CoinTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D17C3EB0A3AB6BF1CF54FE /* Pods_CoinTrackerTests.framework */; };
 		87CBFCF7C6B42F7B88B22B34 /* Pods_CoinTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1294379DD5D39F0203E813 /* Pods_CoinTracker.framework */; };
 /* End PBXBuildFile section */
@@ -176,6 +183,8 @@
 /* Begin PBXFileReference section */
 		023EE02D2B51C1683BE0279C /* Pods-CoinTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTracker/Pods-CoinTracker.release.xcconfig"; sourceTree = "<group>"; };
 		288930CBB05F3C0216A0E14E /* Pods_CoinTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4027158920BEB09A00242AED /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		4027158B20BEB21000242AED /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		4049A9DC20BC2A6C0078AB13 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4055C0FC20BD6A380048D8FB /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		4055C0FD20BD6A380048D8FB /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -238,13 +247,14 @@
 		40A957A120B3035500AF8F10 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		40A957A620B3087900AF8F10 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		40A957AA20B419CB00AF8F10 /* ImageLoaderParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderParameters.swift; sourceTree = "<group>"; };
-		40A957AE20B42A9100AF8F10 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
 		40A957B220B42B3200AF8F10 /* HUDAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDAnimator.swift; sourceTree = "<group>"; };
 		40A957C220B45CC300AF8F10 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		40EDA9C520BEBE8900EA4040 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		40FB698820BE8B65001602CE /* InfoConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoConfigurator.swift; sourceTree = "<group>"; };
 		40FB698920BE8B65001602CE /* InfoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
 		40FB698A20BE8B65001602CE /* InfoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRouter.swift; sourceTree = "<group>"; };
 		40FB698B20BE8B65001602CE /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		40FB699820BE8BD2001602CE /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		4A708FA6059FF21856CB871B /* Pods-CoinTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTrackerTests/Pods-CoinTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		64CD4E98A2E269C6BA5E0DD4 /* Pods-CoinTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTrackerTests/Pods-CoinTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C34B5C62C2AED39F03B8928 /* Pods-CoinTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTrackerUITests/Pods-CoinTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -489,6 +499,7 @@
 				408D0E6820B6D9AD00BC46BB /* Color */,
 				408D0E6E20B6E7AF00BC46BB /* Double */,
 				4049A9E020BC2A750078AB13 /* String */,
+				40EDA9C920BEBE9500EA4040 /* Button */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -525,8 +536,8 @@
 			isa = PBXGroup;
 			children = (
 				404B00C720BD5E140099386C /* Fonts */,
-				40A957AE20B42A9100AF8F10 /* loader.gif */,
 				40A9572C20B2A26E00AF8F10 /* Assets.xcassets */,
+				4027158920BEB09A00242AED /* loader.gif */,
 				40A9572E20B2A26E00AF8F10 /* LaunchScreen.storyboard */,
 				40A9573120B2A26E00AF8F10 /* Info.plist */,
 			);
@@ -536,6 +547,7 @@
 		40A9579220B2CEBB00AF8F10 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4027158B20BEB21000242AED /* Links.swift */,
 				408D0E5B20B6D7E700BC46BB /* Constants.swift */,
 				40A957AA20B419CB00AF8F10 /* ImageLoaderParameters.swift */,
 				40A957C220B45CC300AF8F10 /* Types.swift */,
@@ -572,9 +584,18 @@
 			path = Basic;
 			sourceTree = "<group>";
 		};
+		40EDA9C920BEBE9500EA4040 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				40EDA9C520BEBE8900EA4040 /* UIButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		40FB698720BE8B65001602CE /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				40FB699820BE8BD2001602CE /* Info.storyboard */,
 				40FB698820BE8B65001602CE /* InfoConfigurator.swift */,
 				40FB698920BE8B65001602CE /* InfoPresenter.swift */,
 				40FB698A20BE8B65001602CE /* InfoRouter.swift */,
@@ -725,7 +746,6 @@
 				4055C11C20BD6A410048D8FB /* Montserrat-LightItalic.ttf in Resources */,
 				4055C11620BD6A410048D8FB /* Montserrat-ExtraBold.ttf in Resources */,
 				4055C11120BD6A410048D8FB /* Montserrat-Regular.ttf in Resources */,
-				40A957AF20B42A9100AF8F10 /* loader.gif in Resources */,
 				40A9576620B2A51900AF8F10 /* List.storyboard in Resources */,
 				408D0E5620B6B89C00BC46BB /* StateCoinTableViewCell.xib in Resources */,
 				4055C11D20BD6A410048D8FB /* Montserrat-Bold.ttf in Resources */,
@@ -736,7 +756,9 @@
 				40A9572D20B2A26E00AF8F10 /* Assets.xcassets in Resources */,
 				4055C11420BD6A410048D8FB /* Montserrat-SemiBold.ttf in Resources */,
 				4055C11820BD6A410048D8FB /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				40FB699920BE8BD2001602CE /* Info.storyboard in Resources */,
 				4055C10E20BD6A410048D8FB /* Montserrat-ExtraLight.ttf in Resources */,
+				4027158A20BEB09B00242AED /* loader.gif in Resources */,
 				4055C11A20BD6A410048D8FB /* Montserrat-Medium.ttf in Resources */,
 				4055C11520BD6A410048D8FB /* Montserrat-SemiBoldItalic.ttf in Resources */,
 			);
@@ -746,7 +768,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A957B020B42A9100AF8F10 /* loader.gif in Resources */,
+				40FB699A20BE8BD2001602CE /* Info.storyboard in Resources */,
 				40A9577020B2A5ED00AF8F10 /* CurrencyTableViewCell.xib in Resources */,
 				408D0E3520B560D500BC46BB /* CurrencyDetail.storyboard in Resources */,
 				408D0E5720B6B89C00BC46BB /* StateCoinTableViewCell.xib in Resources */,
@@ -758,7 +780,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A957B120B42A9100AF8F10 /* loader.gif in Resources */,
+				40FB699B20BE8BD2001602CE /* Info.storyboard in Resources */,
 				40A9577120B2A5ED00AF8F10 /* CurrencyTableViewCell.xib in Resources */,
 				408D0E3620B560D500BC46BB /* CurrencyDetail.storyboard in Resources */,
 				408D0E5820B6B89C00BC46BB /* StateCoinTableViewCell.xib in Resources */,
@@ -862,6 +884,7 @@
 				40A957C320B45CC300AF8F10 /* Types.swift in Sources */,
 				40FB698C20BE8B65001602CE /* InfoConfigurator.swift in Sources */,
 				4049A9DD20BC2A6C0078AB13 /* String.swift in Sources */,
+				40EDA9C620BEBE8900EA4040 /* UIButton.swift in Sources */,
 				40A957B320B42B3200AF8F10 /* HUDAnimator.swift in Sources */,
 				40A9576C20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
 				408D0E4E20B5956C00BC46BB /* PullUpController.swift in Sources */,
@@ -883,6 +906,7 @@
 				40A9575F20B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
 				40FB699220BE8B65001602CE /* InfoRouter.swift in Sources */,
 				40A957A220B3035500AF8F10 /* BaseView.swift in Sources */,
+				4027158C20BEB21000242AED /* Links.swift in Sources */,
 				40A9572320B2A26E00AF8F10 /* AppDelegate.swift in Sources */,
 				40A9579E20B2DEB800AF8F10 /* CTError.swift in Sources */,
 			);
@@ -909,6 +933,7 @@
 				40A9576320B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				408D0E5D20B6D7E700BC46BB /* Constants.swift in Sources */,
 				408D0E6120B6D81D00BC46BB /* Usd+Subscript.swift in Sources */,
+				4062866020BEB647005E5891 /* Links.swift in Sources */,
 				408D0E5420B6B89C00BC46BB /* StateCoinTableViewCell.swift in Sources */,
 				40A9577D20B2B8FF00AF8F10 /* CellViewModel.swift in Sources */,
 				40A9576D20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
@@ -916,6 +941,7 @@
 				40A9577520B2A9FD00AF8F10 /* Network.swift in Sources */,
 				40FB699620BE8B65001602CE /* InfoViewController.swift in Sources */,
 				408D0E2B20B560B300BC46BB /* CurrencyDetailPresenter.swift in Sources */,
+				40EDA9C720BEBE8C00EA4040 /* UIButton.swift in Sources */,
 				40A9579B20B2D0B300AF8F10 /* APIConstants.swift in Sources */,
 				40A9578120B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
 				40A9579F20B2DEB800AF8F10 /* CTError.swift in Sources */,
@@ -952,6 +978,7 @@
 				40A9576420B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				408D0E5E20B6D7E700BC46BB /* Constants.swift in Sources */,
 				408D0E6220B6D81D00BC46BB /* Usd+Subscript.swift in Sources */,
+				4062866120BEB647005E5891 /* Links.swift in Sources */,
 				408D0E5520B6B89C00BC46BB /* StateCoinTableViewCell.swift in Sources */,
 				40A9577E20B2B8FF00AF8F10 /* CellViewModel.swift in Sources */,
 				40A9576E20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
@@ -959,6 +986,7 @@
 				40A9577620B2A9FD00AF8F10 /* Network.swift in Sources */,
 				40FB699720BE8B65001602CE /* InfoViewController.swift in Sources */,
 				408D0E2C20B560B300BC46BB /* CurrencyDetailPresenter.swift in Sources */,
+				40EDA9C820BEBE8C00EA4040 /* UIButton.swift in Sources */,
 				40A9579C20B2D0B300AF8F10 /* APIConstants.swift in Sources */,
 				40A9578220B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
 				40A957A020B2DEB800AF8F10 /* CTError.swift in Sources */,
@@ -1128,7 +1156,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ryasnoy.CoinTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryasnoy.chainstock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1148,7 +1176,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ryasnoy.CoinTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryasnoy.chainstock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

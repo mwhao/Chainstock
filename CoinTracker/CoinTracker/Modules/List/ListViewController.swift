@@ -39,8 +39,12 @@ class ListViewController: UIViewController {
   }
   
   
-  @objc func tap(sender: UITapGestureRecognizer) {
+  @objc private func tap(sender: UITapGestureRecognizer) {
     presenter.didTap()
+  }
+  
+  @IBAction private func btnInfoPressed(_ sender: UIBarButtonItem) {
+    presenter.getInfo()
   }
   
 }

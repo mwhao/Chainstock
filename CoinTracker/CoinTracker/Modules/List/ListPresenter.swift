@@ -24,12 +24,13 @@ protocol ListPresenter {
   func currency(at index: Int) -> Currency
   func selectCurrency(at index: Int)
   func didTap()
-
+  func getInfo()
 }
 
 protocol ListRouter {
   func openDetail(for currency: Currency)
   func closeDetail()
+  func openInfo()
 }
 
 class ListPresenterImplementation {
@@ -99,6 +100,10 @@ extension ListPresenterImplementation: ListPresenter {
   func didTap() {
     view?.removeBlurView()
     router.closeDetail()
+  }
+  
+  func getInfo() {
+    router.openInfo()
   }
   
 }

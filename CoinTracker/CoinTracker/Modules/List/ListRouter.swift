@@ -32,6 +32,11 @@ extension ListRouterImplementation: ListRouter {
     let controller = view?.childViewControllers.first(where: {$0 is CurrencyDetailViewController}) as? CurrencyDetailViewController
     controller?.closePullUp(animated: true, completion: {})
   }
+  
+  func openInfo() {
+    let controller = InfoViewController.create(of: .Info)
+    view?.navigationController?.show(controller, sender: view)
+  }
 
 }
 

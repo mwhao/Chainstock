@@ -10,17 +10,20 @@
 import Foundation
 
 protocol InfoView: class {
-  
+  func setVersion(_ text: String)
 }
 
 protocol InfoPresenter {
 
   func viewDidLoad()
-
+  func link(with tag: Int)
+  func sendMail()
+  
 }
 
 protocol InfoRouter {
-  
+  func openSafari(with url: URL)
+  func openMailApp()
 }
 
 class InfoPresenterImplementation {
@@ -37,6 +40,11 @@ class InfoPresenterImplementation {
     self.router = router
 
   }
+  
+  private func appVersion() -> String {
+    guard let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {return ""}
+    return "v \(version)"
+  }
 
 }
 
@@ -45,10 +53,17 @@ class InfoPresenterImplementation {
 extension InfoPresenterImplementation: InfoPresenter {
 
   func viewDidLoad() {
-    
+    view?.setVersion(appVersion())
+  }
+  
+  func link(with tag: Int) {
+    guard let link = Links(rawValue: tag), let url = URL(string: link.description()) else {return}
+    router.openSafari(with: url)
   }
 
+  func sendMail() {
+    router.openMailApp()
+  }
+  
 }
-
-
 

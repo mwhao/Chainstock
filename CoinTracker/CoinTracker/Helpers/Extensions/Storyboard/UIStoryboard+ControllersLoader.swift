@@ -18,6 +18,7 @@ extension UIStoryboard {
   
   enum Storyboard: String {
     case CurrencyDetail
+    case Info
     
     var filename: String {
       return rawValue

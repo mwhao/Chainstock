@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hej-xc-KWA">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-ExtraLight.ttf">
+            <string>Montserrat-ExtraLight</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About-->
+        <scene sceneID="BXZ-Iu-BXc">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="Hej-xc-KWA" customClass="InfoViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n2q-iG-4Zb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylC-AS-SSI">
+                                <rect key="frame" x="0.0" y="362.5" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <color key="tintColor" red="0.070588235289999995" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="help.chainstock@gmail.com" image="icon_mail">
+                                    <color key="titleColor" red="0.070588235289999995" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHelpPressed:" destination="Hej-xc-KWA" eventType="touchUpInside" id="5sX-Jn-NrX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oI-1e-FBt">
+                                <rect key="frame" x="0.0" y="403.5" width="320" height="23"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <color key="tintColor" red="0.070588235289999995" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Project on Github" image="icon_github">
+                                    <color key="titleColor" red="0.070588235289999995" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLinkPressed:" destination="Hej-xc-KWA" eventType="touchUpInside" id="VFE-T2-Hkz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="6w7-8v-K7Y">
+                                <rect key="frame" x="0.0" y="20" width="320" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6w7-8v-K7Y" secondAttribute="height" multiplier="2:1" id="wz2-Sa-mnP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H7-dP-f6s">
+                                <rect key="frame" x="130" y="539" width="60" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-ExtraLight" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.070588235289999995" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gb-aA-5kW">
+                                <rect key="frame" x="0.0" y="180" width="320" height="162.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Cryptotracker with open source code
+Where everyone can contribute to the growth of the product.
+Send us your reviews or become a participant in GitHub.
+You can keep track of future improvements on our telegram channel.</string>
+                                <color key="textColor" red="0.070588235289999995" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2w-QO-ayB">
+                                <rect key="frame" x="0.0" y="486" width="320" height="33"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="https://t.me/chainstock">
+                                    <color key="titleColor" red="0.070588235289999995" green="0.22352941179999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLinkPressed:" destination="Hej-xc-KWA" eventType="touchUpInside" id="DhU-mo-Fzh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N2w-QO-ayB" firstAttribute="leading" secondItem="M5F-zt-Lbo" secondAttribute="leading" id="2eR-NX-gao"/>
+                            <constraint firstItem="2oI-1e-FBt" firstAttribute="top" secondItem="ylC-AS-SSI" secondAttribute="bottom" constant="20" id="BQw-pL-oY8"/>
+                            <constraint firstItem="0gb-aA-5kW" firstAttribute="height" secondItem="n2q-iG-4Zb" secondAttribute="height" multiplier="1:3.5" id="D4A-yH-HEb"/>
+                            <constraint firstItem="5H7-dP-f6s" firstAttribute="top" secondItem="N2w-QO-ayB" secondAttribute="bottom" constant="20" id="FKA-dL-eqk"/>
+                            <constraint firstItem="0gb-aA-5kW" firstAttribute="leading" secondItem="M5F-zt-Lbo" secondAttribute="leading" id="GNX-AM-zuX"/>
+                            <constraint firstItem="2oI-1e-FBt" firstAttribute="leading" secondItem="M5F-zt-Lbo" secondAttribute="leading" id="M3i-G9-1L8"/>
+                            <constraint firstItem="M5F-zt-Lbo" firstAttribute="trailing" secondItem="6w7-8v-K7Y" secondAttribute="trailing" id="MVL-4n-nqO"/>
+                            <constraint firstItem="M5F-zt-Lbo" firstAttribute="trailing" secondItem="ylC-AS-SSI" secondAttribute="trailing" id="N1H-4s-ukd"/>
+                            <constraint firstItem="5H7-dP-f6s" firstAttribute="centerX" secondItem="n2q-iG-4Zb" secondAttribute="centerX" id="Ouo-Qw-ule"/>
+                            <constraint firstItem="M5F-zt-Lbo" firstAttribute="bottom" secondItem="5H7-dP-f6s" secondAttribute="bottom" constant="8" id="RV0-wk-ppK"/>
+                            <constraint firstItem="ylC-AS-SSI" firstAttribute="top" secondItem="0gb-aA-5kW" secondAttribute="bottom" constant="20" id="SNa-Gk-fEb"/>
+                            <constraint firstItem="ylC-AS-SSI" firstAttribute="leading" secondItem="M5F-zt-Lbo" secondAttribute="leading" id="hdk-LT-2JM"/>
+                            <constraint firstItem="6w7-8v-K7Y" firstAttribute="leading" secondItem="M5F-zt-Lbo" secondAttribute="leading" id="hsB-RN-eAx"/>
+                            <constraint firstItem="M5F-zt-Lbo" firstAttribute="trailing" secondItem="0gb-aA-5kW" secondAttribute="trailing" id="mrL-G5-KTt"/>
+                            <constraint firstItem="M5F-zt-Lbo" firstAttribute="trailing" secondItem="N2w-QO-ayB" secondAttribute="trailing" id="pVG-Gf-ZlL"/>
+                            <constraint firstItem="M5F-zt-Lbo" firstAttribute="trailing" secondItem="2oI-1e-FBt" secondAttribute="trailing" id="pa2-HO-KYf"/>
+                            <constraint firstItem="0gb-aA-5kW" firstAttribute="top" secondItem="6w7-8v-K7Y" secondAttribute="bottom" id="q9s-u8-QVA"/>
+                            <constraint firstItem="6w7-8v-K7Y" firstAttribute="top" secondItem="M5F-zt-Lbo" secondAttribute="top" id="r47-yT-WAe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M5F-zt-Lbo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="RBe-L3-Jff">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ICo-HR-rVB"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txtVersion" destination="5H7-dP-f6s" id="BW5-8Z-FF1"/>
+                        <outletCollection property="btnsInfo" destination="ylC-AS-SSI" collectionClass="NSMutableArray" id="2w6-mU-ELy"/>
+                        <outletCollection property="btnsInfo" destination="2oI-1e-FBt" collectionClass="NSMutableArray" id="8iH-po-SZX"/>
+                        <outletCollection property="btnsInfo" destination="N2w-QO-ayB" collectionClass="NSMutableArray" id="auA-5w-jL5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDo-GW-mMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Header" width="2216" height="831"/>
+        <image name="icon_github" width="22" height="23"/>
+        <image name="icon_mail" width="22" height="18"/>
+    </resources>
+</document>

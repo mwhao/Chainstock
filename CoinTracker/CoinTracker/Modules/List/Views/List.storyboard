@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VgZ-pu-ejY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VgZ-pu-ejY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,7 +52,12 @@
                         <viewLayoutGuide key="safeArea" id="c1g-la-0Ds"/>
                     </view>
                     <navigationItem key="navigationItem" title="CHAINSTOCK" largeTitleDisplayMode="always" id="RTR-rW-GQf">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="info" id="Vhh-49-jTt"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="HJy-Dx-6Kj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info" id="Vhh-49-jTt">
+                            <connections>
+                                <action selector="btnInfoPressed:" destination="la5-X2-q2L" id="8RJ-rE-fJV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="mYe-Rv-nCk" id="ra2-3b-J9i"/>
