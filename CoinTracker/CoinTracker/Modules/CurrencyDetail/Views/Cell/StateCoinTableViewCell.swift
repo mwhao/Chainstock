@@ -22,23 +22,26 @@ class StateCoinTableViewCell: UITableViewCell {
 extension Usd: CellViewModel {
   func setup(cell: StateCoinTableViewCell) {
     guard let changePeriod = ChangePeriod(rawValue: cell.tag) else {return}
-    cell.txtTitle.text = self[changePeriod].period
-    cell.txtPercentGrowth.text = "\(self[changePeriod].percent) %"
+    let changePercent = self[changePeriod].percent
     
-    let diff = price ^% self[changePeriod].percent
+    cell.txtTitle.text = self[changePeriod].period
+    cell.txtPercentGrowth.text = "\(changePercent) %"
+    
+    guard abs(changePercent) != 0 else {return}
+    let diff = price ^% changePercent
     let caluculated = price - (diff)
     cell.txtValueGrowth.text = "$ \(diff.shiftConvert())"
     
     cell.txtCalculatedValue.text = "$ \(caluculated.shiftConvert())"
     
-    cell.txtValueGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()
-    cell.txtPercentGrowth.textColor = UIColor.CoinDetail.growth(self[changePeriod].percent).dematerialize()
+    cell.txtValueGrowth.textColor = UIColor.CoinDetail.growth(changePercent).dematerialize()
+    cell.txtPercentGrowth.textColor = UIColor.CoinDetail.growth(changePercent).dematerialize()
     
-    let changePercent = self[changePeriod].percent
-    if abs(changePercent) != 0 {
+    
+    
     cell.imgValueGrowth.image = changePercent > 0 ? #imageLiteral(resourceName: "icon_value_up") : #imageLiteral(resourceName: "icon_value_down")
     cell.imgPercentGrowth.image = changePercent > 0 ? #imageLiteral(resourceName: "icon_percent_up") : #imageLiteral(resourceName: "icon_percent_down")
-    }
+    
   }
 }
 
