@@ -639,6 +639,7 @@
 				40A9571C20B2A26E00AF8F10 /* Frameworks */,
 				40A9571D20B2A26E00AF8F10 /* Resources */,
 				21BE37D51202EFDDBDAEDF81 /* [CP] Embed Pods Frameworks */,
+				4032FCC120BECB8900B4D101 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -844,6 +845,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinTracker/Pods-CoinTracker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4032FCC120BECB8900B4D101 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a954eef1a63af2e346ec7d729c189d5f00c5601c d75589100901fbf5f7ad71fe85f11b115cd3ce59c4bc37c9cf84043160194fee\n";
 		};
 		7813803559F8DB9E4C36B011 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1149,6 +1163,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 34SL6966R8;
 				INFOPLIST_FILE = CoinTracker/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1169,6 +1184,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 34SL6966R8;
 				INFOPLIST_FILE = CoinTracker/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

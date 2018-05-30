@@ -6,6 +6,8 @@ target 'CoinTracker' do
   use_frameworks!
 
 	pod 'Nuke'
+	pod 'Fabric'
+	pod 'Crashlytics'
 
   # Pods for CoinTracker
 

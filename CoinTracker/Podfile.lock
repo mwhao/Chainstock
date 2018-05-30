@@ -1,16 +1,25 @@
 PODS:
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
+  - Fabric (1.7.7)
   - Nuke (7.0.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - Nuke
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
     - Nuke
 
 SPEC CHECKSUMS:
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
   Nuke: 0944b2e721c8f21857028d980dc3d6a249df8b3e
 
-PODFILE CHECKSUM: 8b153a713461a19fcee8f90c95b2e566ad726abd
+PODFILE CHECKSUM: fc22ec5c94db812c3b99e6b49638e82f884d8884
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3
