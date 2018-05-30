@@ -140,6 +140,18 @@
 		40A957C320B45CC300AF8F10 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957C220B45CC300AF8F10 /* Types.swift */; };
 		40A957C420B45CC300AF8F10 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957C220B45CC300AF8F10 /* Types.swift */; };
 		40A957C520B45CC300AF8F10 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A957C220B45CC300AF8F10 /* Types.swift */; };
+		40FB698C20BE8B65001602CE /* InfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698820BE8B65001602CE /* InfoConfigurator.swift */; };
+		40FB698D20BE8B65001602CE /* InfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698820BE8B65001602CE /* InfoConfigurator.swift */; };
+		40FB698E20BE8B65001602CE /* InfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698820BE8B65001602CE /* InfoConfigurator.swift */; };
+		40FB698F20BE8B65001602CE /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698920BE8B65001602CE /* InfoPresenter.swift */; };
+		40FB699020BE8B65001602CE /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698920BE8B65001602CE /* InfoPresenter.swift */; };
+		40FB699120BE8B65001602CE /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698920BE8B65001602CE /* InfoPresenter.swift */; };
+		40FB699220BE8B65001602CE /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698A20BE8B65001602CE /* InfoRouter.swift */; };
+		40FB699320BE8B65001602CE /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698A20BE8B65001602CE /* InfoRouter.swift */; };
+		40FB699420BE8B65001602CE /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698A20BE8B65001602CE /* InfoRouter.swift */; };
+		40FB699520BE8B65001602CE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698B20BE8B65001602CE /* InfoViewController.swift */; };
+		40FB699620BE8B65001602CE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698B20BE8B65001602CE /* InfoViewController.swift */; };
+		40FB699720BE8B65001602CE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB698B20BE8B65001602CE /* InfoViewController.swift */; };
 		4D0768C0482C18F4E1DED0AE /* Pods_CoinTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D17C3EB0A3AB6BF1CF54FE /* Pods_CoinTrackerTests.framework */; };
 		87CBFCF7C6B42F7B88B22B34 /* Pods_CoinTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1294379DD5D39F0203E813 /* Pods_CoinTracker.framework */; };
 /* End PBXBuildFile section */
@@ -229,6 +241,10 @@
 		40A957AE20B42A9100AF8F10 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
 		40A957B220B42B3200AF8F10 /* HUDAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDAnimator.swift; sourceTree = "<group>"; };
 		40A957C220B45CC300AF8F10 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		40FB698820BE8B65001602CE /* InfoConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoConfigurator.swift; sourceTree = "<group>"; };
+		40FB698920BE8B65001602CE /* InfoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
+		40FB698A20BE8B65001602CE /* InfoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRouter.swift; sourceTree = "<group>"; };
+		40FB698B20BE8B65001602CE /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		4A708FA6059FF21856CB871B /* Pods-CoinTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTrackerTests/Pods-CoinTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		64CD4E98A2E269C6BA5E0DD4 /* Pods-CoinTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTrackerTests/Pods-CoinTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C34B5C62C2AED39F03B8928 /* Pods-CoinTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinTrackerUITests/Pods-CoinTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -427,6 +443,7 @@
 		40A9575320B2A4EB00AF8F10 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				40FB698720BE8B65001602CE /* Info */,
 				40A9575420B2A4EB00AF8F10 /* List */,
 				408D0E2220B560B300BC46BB /* CurrencyDetail */,
 			);
@@ -553,6 +570,17 @@
 				40A957A120B3035500AF8F10 /* BaseView.swift */,
 			);
 			path = Basic;
+			sourceTree = "<group>";
+		};
+		40FB698720BE8B65001602CE /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				40FB698820BE8B65001602CE /* InfoConfigurator.swift */,
+				40FB698920BE8B65001602CE /* InfoPresenter.swift */,
+				40FB698A20BE8B65001602CE /* InfoRouter.swift */,
+				40FB698B20BE8B65001602CE /* InfoViewController.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		568B2BAB2FD8E751E3A08819 /* Pods */ = {
@@ -832,6 +860,7 @@
 				40A9577820B2B54100AF8F10 /* Result.swift in Sources */,
 				408D0E6020B6D81D00BC46BB /* Usd+Subscript.swift in Sources */,
 				40A957C320B45CC300AF8F10 /* Types.swift in Sources */,
+				40FB698C20BE8B65001602CE /* InfoConfigurator.swift in Sources */,
 				4049A9DD20BC2A6C0078AB13 /* String.swift in Sources */,
 				40A957B320B42B3200AF8F10 /* HUDAnimator.swift in Sources */,
 				40A9576C20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
@@ -841,6 +870,7 @@
 				408D0E3C20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */,
 				40A9577420B2A9FD00AF8F10 /* Network.swift in Sources */,
 				408D0E4920B5903A00BC46BB /* View.swift in Sources */,
+				40FB699520BE8B65001602CE /* InfoViewController.swift in Sources */,
 				408D0E6520B6D9A000BC46BB /* Color.swift in Sources */,
 				40A957A720B3087900AF8F10 /* CoreDataStack.swift in Sources */,
 				408D0E1F20B544CE00BC46BB /* Mock.swift in Sources */,
@@ -849,7 +879,9 @@
 				40A9576220B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				40A9578020B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
 				40A9575C20B2A4EB00AF8F10 /* ListPresenter.swift in Sources */,
+				40FB698F20BE8B65001602CE /* InfoPresenter.swift in Sources */,
 				40A9575F20B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
+				40FB699220BE8B65001602CE /* InfoRouter.swift in Sources */,
 				40A957A220B3035500AF8F10 /* BaseView.swift in Sources */,
 				40A9572320B2A26E00AF8F10 /* AppDelegate.swift in Sources */,
 				40A9579E20B2DEB800AF8F10 /* CTError.swift in Sources */,
@@ -865,12 +897,15 @@
 				408D0E3D20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */,
 				40A9576020B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
 				408D0E2E20B560B300BC46BB /* CurrencyDetailRouter.swift in Sources */,
+				40FB698D20BE8B65001602CE /* InfoConfigurator.swift in Sources */,
+				40FB699320BE8B65001602CE /* InfoRouter.swift in Sources */,
 				40A9575A20B2A4EB00AF8F10 /* ListConfigurator.swift in Sources */,
 				40A9575D20B2A4EB00AF8F10 /* ListPresenter.swift in Sources */,
 				408D0E6C20B6E7AC00BC46BB /* Double.swift in Sources */,
 				408D0E2820B560B300BC46BB /* CurrencyDetailConfigurator.swift in Sources */,
 				40A957AC20B41A0100AF8F10 /* ImageLoaderParameters.swift in Sources */,
 				408D0E3120B560B300BC46BB /* CurrencyDetailViewController.swift in Sources */,
+				40FB699020BE8B65001602CE /* InfoPresenter.swift in Sources */,
 				40A9576320B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				408D0E5D20B6D7E700BC46BB /* Constants.swift in Sources */,
 				408D0E6120B6D81D00BC46BB /* Usd+Subscript.swift in Sources */,
@@ -879,6 +914,7 @@
 				40A9576D20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
 				40A9579620B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */,
 				40A9577520B2A9FD00AF8F10 /* Network.swift in Sources */,
+				40FB699620BE8B65001602CE /* InfoViewController.swift in Sources */,
 				408D0E2B20B560B300BC46BB /* CurrencyDetailPresenter.swift in Sources */,
 				40A9579B20B2D0B300AF8F10 /* APIConstants.swift in Sources */,
 				40A9578120B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,
@@ -904,12 +940,15 @@
 				408D0E3E20B567AC00BC46BB /* UIStoryboard+ControllersLoader.swift in Sources */,
 				40A9576120B2A4EB00AF8F10 /* ListRouter.swift in Sources */,
 				408D0E2F20B560B300BC46BB /* CurrencyDetailRouter.swift in Sources */,
+				40FB698E20BE8B65001602CE /* InfoConfigurator.swift in Sources */,
+				40FB699420BE8B65001602CE /* InfoRouter.swift in Sources */,
 				40A9575B20B2A4EB00AF8F10 /* ListConfigurator.swift in Sources */,
 				40A9575E20B2A4EB00AF8F10 /* ListPresenter.swift in Sources */,
 				408D0E6D20B6E7AC00BC46BB /* Double.swift in Sources */,
 				408D0E2920B560B300BC46BB /* CurrencyDetailConfigurator.swift in Sources */,
 				40A957AD20B41A0100AF8F10 /* ImageLoaderParameters.swift in Sources */,
 				408D0E3220B560B300BC46BB /* CurrencyDetailViewController.swift in Sources */,
+				40FB699120BE8B65001602CE /* InfoPresenter.swift in Sources */,
 				40A9576420B2A4EB00AF8F10 /* ListViewController.swift in Sources */,
 				408D0E5E20B6D7E700BC46BB /* Constants.swift in Sources */,
 				408D0E6220B6D81D00BC46BB /* Usd+Subscript.swift in Sources */,
@@ -918,6 +957,7 @@
 				40A9576E20B2A5ED00AF8F10 /* CurrencyTableViewCell.swift in Sources */,
 				40A9579720B2CFFE00AF8F10 /* RawServerResponse.swift in Sources */,
 				40A9577620B2A9FD00AF8F10 /* Network.swift in Sources */,
+				40FB699720BE8B65001602CE /* InfoViewController.swift in Sources */,
 				408D0E2C20B560B300BC46BB /* CurrencyDetailPresenter.swift in Sources */,
 				40A9579C20B2D0B300AF8F10 /* APIConstants.swift in Sources */,
 				40A9578220B2CC1400AF8F10 /* UITableView+CellViewModel.swift in Sources */,

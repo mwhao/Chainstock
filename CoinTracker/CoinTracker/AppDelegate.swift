@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 //TODO: -
 func theme() {
-  UINavigationBar.appearance().barTintColor = UIColor(hex: "3157A4")
+  UINavigationBar.appearance().barTintColor = UIColor(hex: "123962")
   UINavigationBar.appearance().tintColor = .white
   let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Montserrat-Medium", size: 17)!]
   UINavigationBar.appearance().titleTextAttributes = attributes
