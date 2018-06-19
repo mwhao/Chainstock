@@ -1,1 +1,1 @@
-![](https://cdn.rawgit.com/ryasnoy/chainstock/master/Chainstock.svg)
+![Logo](https://github.com/Chainstock-Community/Chainstock/blob/master/Chainstock.png)
